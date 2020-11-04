@@ -4,69 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <h3>Rólam</h3>
+    </header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works.html">Munkáim</a></li>
+            <li><a href="Gallery.html">Galéria</a></li>
+            <li><a href="about.html">Rólam</a></li>
+        </ul>
+    </nav>
+    <main>
 
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/about.html">About</a>
-        </li>
-        <li>
-            <a href="/Gallery.html">Gallery</a>
-        </li>
-        <li>
-            <a href="/skillek.html">Skillek</a>
-        </li>
-        <li>
-            <a href="/eddigimunkak.html">Eddigi munkáim</a>
-        </li>
-    </ul>
+    </main>
+    <section>
+        <aside class="side-image">
+            <img src="https://dreager1.files.wordpress.com/2013/10/alpha_series_closeup1.png" alt="bioshock">
+        </aside>
+        <article class="bio">
+            <h4>Ismert technológiák</h4>
+            <ul>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>NodeJS</li>
+            </ul>
 
-    <h2>
-        Bemutatkozás
-    </h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-    </p>
-
-    <table>
-        <caption>Ügyfélfogadás</caption>
-        <thead>
-            <tr>
-                <th>Nap</th>
-                <th>Nyitva</th>
-                <th>Zárva</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hétfő - Péntek</td>
-                <td>09:00</td>
-                <td rowspan="2">24:00</td>
-            </tr>
-            <tr>
-                <td>Szombat - Vasárnap</td>
-                <td colspan="2">zárva</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>
-                    &copy; 2020
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+            <h4>Soft skillek</h4>
+            <ol>
+                <li>Barátságosság</li>
+                <li>Segítőkészség</li>
+                <li>Kitartás</li>
+            </ol>
+        </article>
+    </section>
+    <section>
+        <form action="" class="message-form">
+            <div class="form-group">
+                <label for="">Név</label>
+                <input type="text" min="5" minlength="5" class="form-controll">
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <input type="email" class="form-controll"></div>
+            <div class="form-group">
+                <label for=""></label>
+                <textarea minlength="20" class="form-controll"></textarea>
+            </div>
+            <button type="submit">
+                Küldés
+            </button>
+        </form>
+        <footer>
+            <a href="#main-nav">Menü</a>
+        </footer>
 </body>
 
 </html>
